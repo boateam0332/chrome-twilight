@@ -1,79 +1,114 @@
-<!DOCTYPE html>
+<!doctype html>
+<!-- The Time Machine GitHub pages theme was designed and developed by Jon Rohan, on Feb 7, 2012. -->
+<!-- Follow him for fun. http://twitter.com/jonrohan. Tail his code on http://github.com/jonrohan -->
 <html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Chrome-twilight : Chrome Inspector Twilight Theme" />
+  <link rel="stylesheet" href="stylesheets/stylesheet.css" media="screen"/>
+  <link rel="stylesheet" href="stylesheets/pygment_trac.css"/>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script type="text/javascript" src="javascripts/script.js"></script>
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+  <title>Chrome-twilight</title>
+  <meta name="description" content="Chrome Inspector Twilight Theme">
 
-    <title>Chrome-twilight</title>
-  </head>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
 
-  <body>
+</head>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/boa0332/chrome-twilight">View on GitHub</a>
+<body>
 
-          <h1 id="project_title">Chrome-twilight</h1>
-          <h2 id="project_tagline">Chrome Inspector Twilight Theme</h2>
+  <div class="wrapper">
+    <header>
+      <h1 class="title">Chrome-twilight</h1>
+    </header>
+    <div id="container">
+      <p class="tagline">Chrome Inspector Twilight Theme</p>
+      <div id="main" role="main">
+        <div class="download-bar">
+        <div class="inner">
+          <a href="https://github.com/boa0332/chrome-twilight/tarball/master" class="download-button tar"><span>Download</span></a>
+          <a href="https://github.com/boa0332/chrome-twilight/zipball/master" class="download-button zip"><span>Download</span></a>
+          <a href="https://github.com/boa0332/chrome-twilight" class="code">View Chrome-twilight on GitHub</a>
+        </div>
+        <span class="blc"></span><span class="trc"></span>
+        </div>
+        <article class="markdown-body">
+          <h1>
+<a name="chrome-inspector-twilight-theme" class="anchor" href="#chrome-inspector-twilight-theme"><span class="octicon octicon-link"></span></a>Chrome Inspector Twilight Theme</h1>
 
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/boa0332/chrome-twilight/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/boa0332/chrome-twilight/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
+<p>This is just my implementation and is probably not 100% what you would expect. The way the Chrome inspector wraps things is different to how code editors do it, so it's not possible to get it <em>identical</em>, but we can get a close approximation.</p>
+
+<p>Includes the Elements, Resources (view js/css/html file), Sources (view js/css/html file), and Console panels; styles for the toolbar (Elements/Resources/Network/etc); and even view source styles (note: not JS/CSS view source though - that's not possible at the moment).</p>
+
+<p>As always, if you see something that you can improve on, please do so and send a pull request :)</p>
+
+<h2>
+<a name="disclaimer" class="anchor" href="#disclaimer"><span class="octicon octicon-link"></span></a>DISCLAIMER</h2>
+
+<p>Please note: custom themes are unofficial and may potentially break existing DevTools functionality.</p>
+
+<p>As always, if you encounter bugs with the DevTools, please <a href="http://crbug.com">report them</a>, but disable the theme and test again, first. ;)</p>
+
+<h2>
+<a name="the-3d" class="anchor" href="#the-3d"><span class="octicon octicon-link"></span></a>The 3D</h2>
+
+<p>I've added a 3D hover effect to the icons in the tabs. To see an example of the effect, see <a href="http://codepen.io/remybach/details/fGdJB#pen-details-tab">this codepen</a> I made to demonstrate how it works.</p>
+
+<p>If you don't like the 3d tab icon version, I've created a branch without that effect <a href="https://github.com/remybach/chrome-twilight/tree/no-3d">here</a>.</p>
+
+<h2>
+<a name="screenshots" class="anchor" href="#screenshots"><span class="octicon octicon-link"></span></a>Screenshots</h2>
+
+<p>Normal Elements panel</p>
+
+<p><img src="https://raw.github.com/remybach/chrome-twilight/master/resources/elements.png" alt="Elements Panel"></p>
+
+<p>Dock to right &amp; floating Elements panel</p>
+
+<p><img src="https://raw.github.com/remybach/chrome-twilight/master/resources/dock_right-floating.png" alt="Dock to Right &amp; Floating Element Panel"></p>
+
+<p>Sources Panel</p>
+
+<p><img src="https://raw.github.com/remybach/chrome-twilight/master/resources/sources.png" alt="Sources Panel"></p>
+
+<h2>
+<a name="installation" class="anchor" href="#installation"><span class="octicon octicon-link"></span></a>Installation</h2>
+
+<p><a href="http://darcyclarke.me/design/skin-your-chrome-inspector/">This post</a> by <a href="http://darcyclarke.me/">Darcy Clarke</a> should help you out.</p>
+
+<h2>
+<a name="known-issues" class="anchor" href="#known-issues"><span class="octicon octicon-link"></span></a>Known Issues</h2>
+
+<ul>
+<li>If you come across any issues, please let me know by submitting an issue using the link above. Bonus marks for submitting a pull request to fix the issue!</li>
+</ul><h2>
+<a name="credits" class="anchor" href="#credits"><span class="octicon octicon-link"></span></a>Credits</h2>
+
+<p>I based this file off of the <a href="https://github.com/frontdevDE/mnml-devtools-theme">mnml Theme</a> by <a href="https://github.com/frontdevDE">Michael P. Pfeiffer</a>, which itself was based off of <a href="https://gist.github.com/3040634">the Tomorrow Theme</a> by <a href="https://github.com/bentruyman">Ben Truyman</a>.</p>
+        </article>
+      </div>
     </div>
+    <footer>
+      <div class="owner">
+      <p><a href="https://github.com/boa0332" class="avatar"><img src="https://avatars0.githubusercontent.com/u/1981504?s=60" width="48" height="48"/></a> <a href="https://github.com/boa0332">boa0332</a> maintains <a href="https://github.com/boa0332/chrome-twilight">Chrome-twilight</a></p>
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+      </div>
+      <div class="creds">
+        <small>This page generated using <a href="http://pages.github.com/">GitHub Pages</a><br/>theme by <a href="https://twitter.com/jonrohan/">Jon Rohan</a></small>
+      </div>
+    </footer>
+  </div>
+  <div class="current-section">
+    <a href="#top">Scroll to top</a>
+    <a href="https://github.com/boa0332/chrome-twilight/tarball/master" class="tar">tar</a><a href="https://github.com/boa0332/chrome-twilight/zipball/master" class="zip">zip</a><a href="" class="code">source code</a>
+    <p class="name"></p>
+  </div>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Chrome-twilight maintained by <a href="https://github.com/boa0332">boa0332</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
-              <script type="text/javascript">
+            <script type="text/javascript">
             var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
             document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
           </script>
@@ -84,6 +119,5 @@ $ git checkout gh-pages
             } catch(err) {}
           </script>
 
-
-  </body>
+</body>
 </html>
